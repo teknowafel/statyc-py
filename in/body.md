@@ -5,7 +5,7 @@ Body Text.
 ![AWS Thing](https://i.ibb.co/DGjvsyD/download.png)
 *you can make image captions like this*
 
-***This is bold and italic because I surrrounded it with three asterisks on either side***
+***This is bold and italic because I surrounded it with three asterisks on either side***
 
 ```python
 #wow look comments!
