@@ -1,4 +1,4 @@
-## Article Title
+## Page Title
 Body Text.
 <h4>You can also use HTML in the markdown documents, which is handled just like normal HTML.</h2><br/>
 
