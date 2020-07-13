@@ -11,5 +11,5 @@ class settings:
     author = "John Smith"
 
     #replace "(c) 2020" with your copyright information.
-    copyright = "(c) 2020"
+    copyright = "&copy; John Smith 2020"
     
