@@ -14,13 +14,21 @@ page = ""
 #gets the working directory
 dir = os.getcwd()
 
-#opens the header template and inserts the site name
+#opens the head template and inserts the site name
 file = open(dir + "/templates/head.html", 'r')
 head = file.read()
 file.close()
 head = head.format(title = siteTitle)
 #appends the new head to the page
 page += head
+
+#opens the header template and inserts the site name
+file = open(dir + "/templates/header.html", 'r')
+header = file.read()
+file.close()
+header = header.format(title = siteTitle)
+#appends the new head to the page
+page += header
 
 #opens the body markdown and saves it to a variable
 file = open(dir + "/in/body.md", 'r')
