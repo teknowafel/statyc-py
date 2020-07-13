@@ -5,6 +5,7 @@ from markdown2 import markdown
 
 #gets information from statyc_settings.py
 siteTitle = settings.title
+siteSubTitle = settings.subtitle
 siteAuthor = settings.author
 siteCopyrightInfo = settings.copyright
 
@@ -22,11 +23,11 @@ head = head.format(title = siteTitle)
 #appends the new head to the page
 page += head
 
-#opens the header template and inserts the site name
+#opens the header template and inserts the site title and subtitle
 file = open(dir + "/templates/header.html", 'r')
 header = file.read()
 file.close()
-header = header.format(title = siteTitle)
+header = header.format(title = siteTitle, subtitle = siteSubTitle)
 #appends the new head to the page
 page += header
 

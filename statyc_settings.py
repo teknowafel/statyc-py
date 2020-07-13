@@ -4,6 +4,9 @@ class settings:
     #replace "Example Title" with the site title.
     title = "Example Title"
 
+    #replace "Example Subtitle" with the site subtitle.
+    subtitle = "Example Subtitle"
+
     #replace "John Smith" with your name / organization.
     author = "John Smith"
 

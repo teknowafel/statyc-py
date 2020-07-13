@@ -1,4 +1,44 @@
 *{
-    width: 1000px;
-    margin: auto;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x:hidden;
 }
+
+html{
+    height: 100%;
+    background: linear-gradient(90deg, #FFC0CB 33%, #00FFFF 33%, #FFC0CB 33%);
+}
+
+h1, h2, h3, h4, div, img, p, footer{
+   width: 500pt;
+}
+
+body{
+    font-size: 12pt;
+}
+
+header{
+    text-align: left;
+    margin-bottom: 20pt;
+    margin-top: 20pt;
+    color: white;
+    background-color: cornflowerblue;
+}
+
+h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    padding-top: 10px;
+    text-align: center;
+}
+

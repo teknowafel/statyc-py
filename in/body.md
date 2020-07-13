@@ -1,7 +1,9 @@
-This is some body text. Blah blah blah oaphjgoaid foda fjdoijf ds od j foa fodighpahlahf hfl sd f.
-This is another line.
+Body Text.
 
-![image](https://i.ibb.co/GFxvcVM/image-8.png)
+![image](https://i.ibb.co/KDs4Ltd/cropped-Norman-Sailbot.png)
+*Here is an image.* <br/>
+
+<h4>You can also use HTML in the markdown documents, which is handled just like normal HTML.</h2><br/>
 
 ```python
 #wow look comments!
