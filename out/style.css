@@ -4,15 +4,15 @@
     margin-left: auto;
     margin-right: auto;
     overflow-x:hidden;
-    box-sizing: border-box;
 }
 
 html{
     height: 100%;
     background-color: rgb(50, 50, 50);
+    overflow-x: hidden;
 }
 
-h1, h2, h3, h4, p, footer{
+h1, h2, h3, h4, p{
    width: 40%;
    font-family: "Source Sans Pro";
 }
@@ -94,8 +94,12 @@ footer{
         width: 90%;
     }
     *{
-        overflow-x:hidden;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: hidden;
     }
+    
     header, .content, footer{
         width: 90%;
         overflow-x:hidden;
