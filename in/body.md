@@ -7,6 +7,8 @@ Body Text.
 
 ***This is bold and italic because I surrounded it with three asterisks on either side***
 
+I wrote this in markdown
+
 ```python
 #wow look comments!
 #syntax highlighting is cool.
