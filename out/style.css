@@ -36,7 +36,7 @@ body{
     font-size: 12pt;
 }
 
-/*header,*/ .content, footer{
+.content, footer{
     width: 48%;
 }
 
@@ -48,28 +48,27 @@ header{
     display: block;
     text-align: left;
     color: white;
-    box-shadow:0px 0px 40px black;  
+    box-shadow:0px 0px 10px black;  
     background-color: rgb(255, 91, 91);
 }
 
 .codehilite{
-    box-shadow:0px 0px 20px gray;  
+    box-shadow:0px 0px 5px black;  
     display: block;
     padding-left: 10pt;
     width: 40%;
+    margin-bottom: 10pt;
 }
 
-.content{
-    box-shadow:0px 0px 40px black;  
-    padding-bottom: 30pt;
-    margin-bottom: 20pt;
+.article{
+    padding-bottom: 5pt;
     margin-top: 20pt;
+    margin-bottom: 20pt;
+    /*background-color: #fffec9;*/
     background-color: white;
-}
-
-h2{
-    padding-top: 10pt;
-    padding-bottom: 10pt;
+    box-shadow:0px 0px 10px black;
+    width: 48%;
+    display: block;
 }
 
 img{
@@ -79,19 +78,21 @@ img{
 
 footer{
     margin-bottom: 20pt;
+    margin-top: 10pt;
     display: block;
     background-color: rgb(137, 227, 255);
-    box-shadow:0px 0px 40px rgb(20, 20, 20); 
+    box-shadow:0px 0px 10px black; 
     text-align: center;
 }
 
 /* CSS FOR MOBILE DEVICES */
 @media (hover:none), (hover:on-demand) { 
     h1, h2, h3, h4, p, body{
-        width: 90%;
+        width: 95%;
     }
     .codehilite{
         width: 90%;
+        box-shadow: none;
     }
     *{
         width: 100vw;
@@ -100,16 +101,17 @@ footer{
         overflow-x: hidden;
     }
     
-    header, .content, footer{
-        width: 90%;
+    header, .article, footer{
+        width: 95%;
         overflow-x:hidden;
+        box-shadow: none;
     }
   }
 
 /* CSS FOR SMALL WINDOW SIZE */
 @media only screen and (max-width: 1000px){
     h1, h2, h3, h4, p, body{
-        width: 90%;
+        width: 95%;
     }
     .codehilite{
         width: 90%;
@@ -117,8 +119,8 @@ footer{
     *{
         overflow-x:hidden;
     }
-    header, .content, footer{
-        width: 90%;
+    header, .article, footer{
+        width: 95%;
         overflow-x:hidden;
     }
 }

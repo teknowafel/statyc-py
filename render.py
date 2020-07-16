@@ -31,15 +31,35 @@ header = header.format(title = siteTitle, subtitle = siteSubTitle)
 #appends the new head to the page
 page += header
 
-#opens the body markdown and saves it to a variable
-file = open(dir + "/in/body.md", 'r')
-bod = file.read()
-file.close()
+for filename in os.listdir(dir + "/in/posts/"):
+    print(filename)
 
-#converts the body markdown to html
-body = markdown(bod, extras=['fenced-code-blocks'])
-#appends the body to the page
-page += body
+    #opens the post template
+    file = open(dir + "/templates/article.html", 'r')
+    postTemplate = file.read()
+    file.close()
+
+    #opens the body markdown and saves it to a variable
+    file = open(dir + "/in/posts/" + filename, 'r')
+    post = file.readlines()
+    file.close()
+
+    #extracts post information from the post
+    postName = filename.replace("-", " ")
+    postName = postName.strip(".md")
+    postAuthor = post[0]
+    postDate = post[1]
+    postContent = post[2:]
+    postContent = ''.join(postContent)
+
+    #converts the body markdown to html
+    contentHTML = markdown(str(postContent), extras=['fenced-code-blocks'])
+
+    #formats the post template using info
+    renderedPost = postTemplate.format(articleTitle = postName, articleAuthor = postAuthor, articleDate = postDate, articleContent = contentHTML)
+
+    #appends the body to the page
+    page += renderedPost
 
 #opens the footer template and inserts the name and copyright info
 file = open(dir + "/templates/footer.html", 'r')
