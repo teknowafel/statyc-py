@@ -53,7 +53,6 @@ header{
 }
 
 .codehilite{
-    box-shadow:0px 0px 5px black;  
     display: block;
     padding-left: 10pt;
     width: 40%;
@@ -91,7 +90,7 @@ footer{
         width: 95%;
     }
     .codehilite{
-        width: 90%;
+        width: 85%;
         box-shadow: none;
     }
     *{
@@ -114,7 +113,7 @@ footer{
         width: 95%;
     }
     .codehilite{
-        width: 90%;
+        width: 95%;
     }
     *{
         overflow-x:hidden;

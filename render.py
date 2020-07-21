@@ -45,18 +45,21 @@ for filename in os.listdir(dir + "/in/posts/"):
     file.close()
 
     #extracts post information from the post
-    postName = filename.replace("-", " ")
-    postName = postName.strip(".md")
-    postAuthor = post[0]
-    postDate = post[1]
-    postContent = post[2:]
+    articleName = filename
+    articleName = articleName.strip(".md")
+
+    postName = post[0]
+    postAuthor = post[1]
+    postDate = post[2]
+    postContent = post[3:]
     postContent = ''.join(postContent)
 
     #converts the body markdown to html
     contentHTML = markdown(str(postContent), extras=['fenced-code-blocks'])
 
+
     #formats the post template using info
-    renderedPost = postTemplate.format(articleTitle = postName, articleAuthor = postAuthor, articleDate = postDate, articleContent = contentHTML)
+    renderedPost = postTemplate.format(articleName = articleName, articleTitle = postName, articleAuthor = postAuthor, articleDate = postDate, articleContent = contentHTML)
 
     #appends the body to the page
     page += renderedPost
