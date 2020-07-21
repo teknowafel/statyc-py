@@ -1,7 +1,7 @@
 #This file is for changing settings. Do not try to execute this file on its own, as it won't do anything.
 class settings:
     #replace "http://example.com" with the base URL of the site
-    baseURL = "http://example.com"
+    baseURL = "file:///C:/Users/vr/Desktop/statyc-py/out"
 
     #replace "Example Title" with the site title.
     title = "Example Title"

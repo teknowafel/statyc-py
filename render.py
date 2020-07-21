@@ -4,7 +4,7 @@ from statyc_settings import settings
 from markdown2 import markdown
 
 #gets information from statyc_settings.py
-baseURL = settings.baseURL
+baseURL = settings.baseURL + "/index.html"
 siteTitle = settings.title
 siteSubTitle = settings.subtitle
 siteAuthor = settings.author

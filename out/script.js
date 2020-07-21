@@ -14,4 +14,9 @@ const copyToClipboard = str => {
       document.getSelection().removeAllRanges();
       document.getSelection().addRange(selected);
     }
+
 };
+
+function copiedAlert(id){
+  document.getElementById(id).textContent = 'Copied!';
+}

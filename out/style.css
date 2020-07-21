@@ -1,6 +1,5 @@
 *{
-    width: 100vw;
-    min-width: 45vw;
+    
     margin-left: auto;
     margin-right: auto;
     overflow-x:hidden;
@@ -13,7 +12,6 @@ html{
 }
 
 h1, h2, h3, h4, p{
-   width: 40%;
    font-family: "Source Sans Pro";
 }
 
@@ -21,10 +19,14 @@ h1, h2, h3, h4, p{
     text-align: left;
     margin-top: 5pt;
     margin-bottom: 5pt;
+    margin-left: 20pt;
+    margin-right: 20pt;
 }
 
 p, footer, h2, h4{
     color: rgb(40, 40, 40);
+    margin-left: 20pt;
+    margin-right: 20pt;
 }
 
 h1, h2, h3, h4{
@@ -36,8 +38,13 @@ body{
     font-size: 12pt;
 }
 
-.content, footer{
+footer{
     width: 48%;
+}
+
+.content{
+    margin-left: 10pt;
+    margin-right: 10pt;
 }
 
 header{
@@ -55,15 +62,15 @@ header{
 .codehilite{
     display: block;
     padding-left: 10pt;
-    width: 40%;
     margin-bottom: 10pt;
+    margin-left: 20pt;
+    margin-right: 20pt;
 }
 
 .article{
     padding-bottom: 5pt;
     margin-top: 20pt;
     margin-bottom: 20pt;
-    /*background-color: #fffec9;*/
     background-color: white;
     box-shadow:0px 0px 10px black;
     width: 48%;
@@ -78,20 +85,37 @@ img{
 footer{
     margin-bottom: 20pt;
     margin-top: 10pt;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     background-color: rgb(137, 227, 255);
     box-shadow:0px 0px 10px black; 
     text-align: center;
 }
 
+
+button{
+    margin-left: 20pt;
+    margin-bottom: 10pt;
+    border-style: solid;
+    border-width: 0px;
+    padding: 7pt;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    width: 50pt;
+    display: inline;
+}
+
+
 /* CSS FOR MOBILE DEVICES */
 @media (hover:none), (hover:on-demand) { 
     h1, h2, h3, h4, p, body{
-        width: 95%;
+        margin-left: 10pt;
+        margin-right: 10pt;
     }
     .codehilite{
-        width: 85%;
-        box-shadow: none;
+        margin-left: 20pt;
+        margin-right: 20pt;
     }
     *{
         width: 100vw;
@@ -112,8 +136,15 @@ footer{
     h1, h2, h3, h4, p, body{
         width: 95%;
     }
+
+    .content{
+        margin-left: 20pt;
+        margin-right: 20pt;
+    }
+
     .codehilite{
-        width: 95%;
+        margin-left: 20pt;
+        margin-right: 20pt;
     }
     *{
         overflow-x:hidden;
