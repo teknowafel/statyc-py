@@ -4,6 +4,7 @@ from statyc_settings import settings
 from markdown2 import markdown
 
 #gets information from statyc_settings.py
+baseURL = settings.baseURL
 siteTitle = settings.title
 siteSubTitle = settings.subtitle
 siteAuthor = settings.author
@@ -59,7 +60,7 @@ for filename in os.listdir(dir + "/in/posts/"):
 
 
     #formats the post template using info
-    renderedPost = postTemplate.format(articleName = articleName, articleTitle = postName, articleAuthor = postAuthor, articleDate = postDate, articleContent = contentHTML)
+    renderedPost = postTemplate.format(baseURL = baseURL, articleName = articleName, articleTitle = postName, articleAuthor = postAuthor, articleDate = postDate, articleContent = contentHTML)
 
     #appends the body to the page
     page += renderedPost
