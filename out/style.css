@@ -110,22 +110,29 @@ button{
 /* CSS FOR MOBILE DEVICES */
 @media (hover:none), (hover:on-demand) { 
     h1, h2, h3, h4, p, body{
-        margin-left: 10pt;
-        margin-right: 10pt;
+        margin-left: 7pt;
+        margin-right: 5pt;
     }
     .codehilite{
-        margin-left: 20pt;
-        margin-right: 20pt;
+        margin-left: 10pt;
+    }
+    .titletext{
+        margin-left: 10pt;
+    }
+    img{
+        margin-right: 10pt;
     }
     *{
-        width: 100vw;
-        margin-left: auto;
-        margin-right: auto;
+        /*width: 100vw;*/
         overflow-x: hidden;
     }
     
+    button{
+        margin-left: 7pt;
+    }
+
     header, .article, footer{
-        width: 95%;
+        /*width: 95%;*/
         overflow-x:hidden;
         box-shadow: none;
     }
@@ -137,6 +144,11 @@ button{
         width: 95%;
     }
 
+    .content{
+        margin-left: 20pt;
+        margin-right: 20pt;
+    }
+
     .codehilite{
         margin-left: 20pt;
         margin-right: 20pt;
@@ -146,6 +158,7 @@ button{
     }
     header, .article, footer{
         width: 95%;
+        overflow-x:hidden;
     }
 }
 
