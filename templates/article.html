@@ -1,7 +1,9 @@
 <div class="article" id="{articleName}">
     <h2>{articleTitle}</h2>
-    <h4>By {articleAuthor} on {articleDate}</article></h4>
-    <br/>
+    <h4>By {articleAuthor} on {articleDate}</article>
+    </h4>
+    <br />
     {articleContent}
-    <button id="btn{articleName}" class="copyButton" onclick="copyToClipboard('{baseURL}#{articleName}'); copiedAlert('btn{articleName}')">Share</button>
+    <button id="btn{articleName}" class="copyButton"
+        onclick="copyToClipboard('{baseURL}#{articleName}'); copiedAlert('btn{articleName}')">Share</button>
 </div>

@@ -1,21 +1,24 @@
-*{
-    
+* {
     margin-left: auto;
     margin-right: auto;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
-html{
+html {
     height: 100%;
     background-color: rgb(50, 50, 50);
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, p{
-   font-family: "Source Sans Pro";
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: "Source Sans Pro";
 }
 
-.titletext{
+.titletext {
     text-align: left;
     margin-top: 5pt;
     margin-bottom: 5pt;
@@ -23,31 +26,37 @@ h1, h2, h3, h4, p{
     margin-right: 20pt;
 }
 
-p, footer, h2, h4{
+p,
+footer,
+h2,
+h4 {
     color: rgb(40, 40, 40);
     margin-left: 20pt;
     margin-right: 20pt;
 }
 
-h1, h2, h3, h4{
+h1,
+h2,
+h3,
+h4 {
     margin-bottom: -10pt;
 }
 
-body{
+body {
     text-align: left;
     font-size: 12pt;
 }
 
-footer{
+footer {
     width: 48%;
 }
 
-.content{
+.content {
     margin-left: 10pt;
     margin-right: 10pt;
 }
 
-header{
+header {
     height: auto;
     margin-top: 10pt;
     text-align: center;
@@ -55,11 +64,11 @@ header{
     display: block;
     text-align: left;
     color: white;
-    box-shadow:0px 0px 10px black;  
+    box-shadow: 0px 0px 10px black;
     background-color: rgb(255, 91, 91);
 }
 
-.codehilite{
+.codehilite {
     display: block;
     padding-left: 10pt;
     margin-bottom: 10pt;
@@ -67,34 +76,34 @@ header{
     margin-right: 20pt;
 }
 
-.article{
+.article {
     padding-bottom: 5pt;
     margin-top: 20pt;
     margin-bottom: 20pt;
     background-color: white;
-    box-shadow:0px 0px 10px black;
+    box-shadow: 0px 0px 10px black;
     width: 48%;
     display: block;
 }
 
-img{
+img {
     display: block;
     width: 100%;
 }
 
-footer{
+footer {
     margin-bottom: 20pt;
     margin-top: 10pt;
     margin-left: auto;
     margin-right: auto;
     display: block;
     background-color: rgb(137, 227, 255);
-    box-shadow:0px 0px 10px black; 
+    box-shadow: 0px 0px 10px black;
     text-align: center;
 }
 
 
-button{
+button {
     margin-left: 20pt;
     margin-bottom: 10pt;
     border-style: solid;
@@ -106,59 +115,80 @@ button{
     display: inline;
 }
 
+/* CSS FOR SMALL WINDOW SIZE */
+@media only screen and (max-width: 1200px) {
 
-/* CSS FOR MOBILE DEVICES */
-@media (hover:none), (hover:on-demand) { 
-    h1, h2, h3, h4, p, body{
-        margin-left: 7pt;
-        margin-right: 5pt;
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    body {
+        width: 95%;
     }
+
+    .content {
+        margin-left: 20pt;
+        margin-right: 20pt;
+    }
+
     .codehilite{
-        margin-left: 10pt;
+        margin-left: 20pt;
+        margin-right: 20pt;
     }
-    .titletext{
-        margin-left: 10pt;
-    }
-    img{
-        margin-right: 10pt;
-    }
-    *{
-        /*width: 100vw;*/
+    * {
         overflow-x: hidden;
     }
-    
-    button{
-        margin-left: 7pt;
-    }
 
-    header, .article, footer{
-        /*width: 95%;*/
-        overflow-x:hidden;
-        box-shadow: none;
-    }
-  }
-
-/* CSS FOR SMALL WINDOW SIZE */
-@media only screen and (max-width: 1200px){
-    h1, h2, h3, h4, p, body{
+    header,
+    .article,
+    footer {
         width: 95%;
-    }
-
-    .content{
-        margin-left: 20pt;
-        margin-right: 20pt;
-    }
-
-    .codehilite{
-        margin-left: 20pt;
-        margin-right: 20pt;
-    }
-    *{
-        overflow-x:hidden;
-    }
-    header, .article, footer{
-        width: 95%;
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
 }
 
+/* CSS FOR MOBILE DEVICES */
+@media (hover:none),
+(hover:on-demand) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    body {
+        margin-left: 7pt;
+        margin-right: 5pt;
+    }
+
+    .codehilite {
+        margin-left: 7pt;
+        margin-right: 5pt;
+    }
+
+    .titletext {
+        margin-left: 10pt;
+    }
+
+    img {
+        margin-right: 10pt;
+    }
+
+    * {
+        /*width: 100vw;*/
+        overflow-x: hidden;
+    }
+
+    button {
+        margin-left: 7pt;
+    }
+
+    header,
+    .article,
+    footer {
+        /*width: 95%;*/
+        overflow-x: hidden;
+        box-shadow: none;
+    }
+}
