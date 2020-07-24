@@ -108,11 +108,12 @@ button {
     margin-bottom: 10pt;
     border-style: solid;
     border-width: 0px;
-    padding: 7pt;
+    padding: 5pt;
     color: white;
     background-color: rgb(40, 40, 40);
-    width: 50pt;
+    /*width: 45pt;*/
     display: inline;
+    font-size: 10pt;
 }
 
 /* CSS FOR SMALL WINDOW SIZE */
@@ -132,10 +133,11 @@ button {
         margin-right: 20pt;
     }
 
-    .codehilite{
+    .codehilite {
         margin-left: 20pt;
         margin-right: 20pt;
     }
+
     * {
         overflow-x: hidden;
     }
@@ -157,14 +159,10 @@ button {
     h3,
     h4,
     p,
-    body {
-        margin-left: 7pt;
-        margin-right: 5pt;
-    }
-
+    body,
     .codehilite {
         margin-left: 7pt;
-        margin-right: 5pt;
+        margin-right: 7pt;
     }
 
     .titletext {
