@@ -1,5 +1,5 @@
 #STATYC-PY ROADMAP
-#-----------------
+  
 This roadmap is divided into three categories; now, in-progress, and future. The meaning of these category titles is somewhat self-explainatory, so I won't be going into detail regarding said topic.
 
 ## NOW (7/23/20)
