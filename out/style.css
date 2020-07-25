@@ -74,16 +74,29 @@ header {
     margin-bottom: 10pt;
     margin-left: 20pt;
     margin-right: 20pt;
+    border-radius: 5pt;
 }
 
 .article {
-    padding-bottom: 5pt;
+    padding-bottom: 10pt;
     margin-top: 20pt;
     margin-bottom: 20pt;
     background-color: white;
     box-shadow: 0px 0px 10px black;
     width: 48%;
     display: block;
+    border-radius: 5pt;
+}
+
+.articleContent {
+    max-height: 60pt;
+    margin-bottom: 5pt;
+    overflow-y: hidden;
+
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 img {
@@ -100,20 +113,28 @@ footer {
     background-color: rgb(137, 227, 255);
     box-shadow: 0px 0px 10px black;
     text-align: center;
+    border-radius: 5pt;
 }
 
 
 button {
+    border-radius: 4pt;
+    font-weight: bold;
     margin-left: 20pt;
-    margin-bottom: 10pt;
     border-style: solid;
     border-width: 0px;
-    padding: 5pt;
+    padding: 4pt;
     color: white;
-    background-color: rgb(40, 40, 40);
-    /*width: 45pt;*/
+    background-color: rgb(50, 50, 50);
     display: inline;
     font-size: 10pt;
+    outline: none;
+}
+
+.readMoreButton{
+    color: rgb(30, 30, 30);
+    background-color: rgb(137, 227, 255);
+    margin-left: 2pt;
 }
 
 /* CSS FOR SMALL WINDOW SIZE */
@@ -138,6 +159,7 @@ button {
     footer {
         width: 95%;
         overflow-x: hidden;
+        border-radius: 5pt;
     }
 }
 
@@ -179,5 +201,6 @@ button {
         /*width: 95%;*/
         overflow-x: hidden;
         box-shadow: none;
+        border-radius: 5pt;
     }
 }

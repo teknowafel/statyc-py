@@ -18,25 +18,31 @@
 </h2>
     <h4>By John Smith
  on 7/16/2020
-</article>
-    </h4>
+</h4>
     <br />
-    <p>This is another post.</p>
+
+    <div class="articleContent" id="another-post-content" data-open="false">        
+        <p>This is another post.</p>
 
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">)</span>
 </code></pre></div>
 
+    </div>
+    
     <button id="btnanother-post" class="copyButton"
         onclick="copyToClipboard('http://example.com/index.html#another-post'); copiedAlert('btnanother-post')">Share</button>
+
+    <button class="readMoreButton" id="btnMoreanother-post" onclick="readButton('another-post-content', 'another-post', 'btnMoreanother-post')">Read More</button>
 </div><div class="article" id="lorem-ipsu">
     <h2>Lipsum
 </h2>
     <h4>By John Smith
  on 7/21/2020
-</article>
-    </h4>
+</h4>
     <br />
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis iaculis sem. Etiam aliquam sem in venenatis finibus. Donec consequat est ac mi aliquet dapibus. Phasellus sed lectus ut lacus rhoncus pellentesque. Integer tempus nisl sed turpis blandit, et pretium tellus commodo. Aliquam ut sagittis ex. Vivamus tortor turpis, convallis eu viverra ac, volutpat id est. In venenatis suscipit semper. Nunc nulla lorem, aliquam ut faucibus in, consequat eget eros. Nunc tincidunt congue lacus eu accumsan. Integer facilisis lorem turpis.</p>
+
+    <div class="articleContent" id="lorem-ipsu-content" data-open="false">        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis iaculis sem. Etiam aliquam sem in venenatis finibus. Donec consequat est ac mi aliquet dapibus. Phasellus sed lectus ut lacus rhoncus pellentesque. Integer tempus nisl sed turpis blandit, et pretium tellus commodo. Aliquam ut sagittis ex. Vivamus tortor turpis, convallis eu viverra ac, volutpat id est. In venenatis suscipit semper. Nunc nulla lorem, aliquam ut faucibus in, consequat eget eros. Nunc tincidunt congue lacus eu accumsan. Integer facilisis lorem turpis.</p>
 
 <p>Vivamus semper enim id quam molestie tincidunt. Aliquam cursus, tellus sit amet vestibulum rutrum, dui justo egestas quam, a mollis nibh nisl non neque. Curabitur condimentum consequat consectetur. Mauris in ligula vel libero lacinia rutrum. In nisi neque, malesuada at mattis vitae, consequat at ex. Morbi tempor malesuada tempus. Nam auctor dolor et tincidunt tincidunt. Nunc eget lobortis erat. Suspendisse orci mauris, volutpat ac lorem nec, fermentum laoreet leo. Nam ac ipsum vel justo tempor volutpat. Pellentesque quam augue, interdum id malesuada in, aliquet sit amet enim. Duis a euismod ex. Maecenas scelerisque auctor sem, eu ullamcorper felis suscipit eget. Curabitur rhoncus egestas ipsum faucibus tempus. Phasellus tincidunt varius elit.</p>
 
@@ -46,22 +52,31 @@
 
 <p>Duis purus nisl, iaculis a tincidunt eget, placerat eget libero. Nam mattis, orci eu facilisis iaculis, risus nisl facilisis massa, vel euismod leo lacus eu lectus. Fusce elit felis, bibendum ac mollis ut, mattis dapibus sem. Pellentesque porta nisi massa, non dignissim urna dapibus a. Sed ut nulla laoreet, convallis leo sed, rutrum urna. Suspendisse in vulputate ante. Pellentesque posuere tortor eros, in varius purus fermentum sed.</p>
 
+    </div>
+    
     <button id="btnlorem-ipsu" class="copyButton"
         onclick="copyToClipboard('http://example.com/index.html#lorem-ipsu'); copiedAlert('btnlorem-ipsu')">Share</button>
+
+    <button class="readMoreButton" id="btnMorelorem-ipsu" onclick="readButton('lorem-ipsu-content', 'lorem-ipsu', 'btnMorelorem-ipsu')">Read More</button>
 </div><div class="article" id="raspberry-pi">
     <h2>The Raspberry Pi
 </h2>
     <h4>By John Smith
  on 7/16/2020
-</article>
-    </h4>
+</h4>
     <br />
-    <p>The Raspberry Pi Zero is a $5 computer which can be used to run various applications.</p>
+
+    <div class="articleContent" id="raspberry-pi-content" data-open="false">        
+        <p>The Raspberry Pi Zero is a $5 computer which can be used to run various applications.</p>
 
 <p><em>italic</em></p>
 
+    </div>
+    
     <button id="btnraspberry-pi" class="copyButton"
         onclick="copyToClipboard('http://example.com/index.html#raspberry-pi'); copiedAlert('btnraspberry-pi')">Share</button>
+
+    <button class="readMoreButton" id="btnMoreraspberry-pi" onclick="readButton('raspberry-pi-content', 'raspberry-pi', 'btnMoreraspberry-pi')">Read More</button>
 </div><footer>
     <p>John Smith</p>
     <p>&copy; John Smith 2020</p>
