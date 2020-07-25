@@ -37,9 +37,9 @@ function readLess(name, articleName, button) {
   var elmnt = document.getElementById(articleName);
   document.getElementById(button).textContent = 'Read More';
 
-  //setTimeout(function (){
-  //  elmnt.scrollIntoView({ behavior: 'smooth' });
-  //}, 700);
+  setTimeout(function (){
+    elmnt.scrollIntoView({ behavior: 'smooth' });
+  }, 700);
 }
 
 function readButton(name, articleName, button) {

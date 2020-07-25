@@ -1,3 +1,3 @@
 # statyc-py
-  
-This readme is WIP.
+
+## What is statyc-py?
