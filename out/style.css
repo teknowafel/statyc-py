@@ -118,16 +118,7 @@ button {
 
 /* CSS FOR SMALL WINDOW SIZE */
 @media only screen and (max-width: 1200px) {
-
-    h1,
-    h2,
-    h3,
-    h4,
-    p,
-    body {
-        width: 95%;
-    }
-
+    
     .content {
         margin-left: 20pt;
         margin-right: 20pt;
