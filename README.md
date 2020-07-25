@@ -1,4 +1,4 @@
-![# statyc-py](https://i.ibb.co/5WjRjr1/logo.png =250x)
+<img src="https://i.ibb.co/5WjRjr1/logo.png" width="250">
 ### [https://teknowafel.github.io/statyc-py/](https://teknowafel.github.io/statyc-py/)
 
 
