@@ -1,6 +1,4 @@
 <img src="https://i.ibb.co/5WjRjr1/logo.png" width="250">
-[statyc-py](https://teknowafel.github.io/statyc-py/)
-
 
 ## What is statyc-py?
 statyc-py is a simple static site generator written in python.
