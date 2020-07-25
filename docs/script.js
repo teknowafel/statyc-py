@@ -19,6 +19,9 @@ const copyToClipboard = str => {
 
 function copiedAlert(id) {
   document.getElementById(id).textContent = 'Copied!';
+  setTimeout(function (){
+    document.getElementById(id).textContent = 'Share';
+  }, 1000);
 }
 
 function readMore(name, articleName, button) {
