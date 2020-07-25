@@ -1,7 +1,7 @@
 <img src="https://i.ibb.co/5WjRjr1/logo.png" width="250">
 
 ## What is statyc-py?
-statyc-py is a simple static site generator written in python.
+statyc-py is a simple static site generator written in python, which generates a clean, minimalistic blog style website with seamless support for mobile and desktop devices alike.
 
 ## How does statyc-py work?
 statyc-py uses two simple sources for the information used to build the site.
