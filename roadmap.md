@@ -10,10 +10,10 @@ This roadmap is divided into three categories; now, in-progress, and future. The
 5. A button at the end of each article to copy the permalink
 6. The buttons at the end of each article are stylized
 7. "Read More" / "Read Less" button to make scrolling through articles easier with fluid animations
+8. Improved site aesthetics
 
 ## In-Progress (7/25/20)
-1. Improving site aesthetics
-2. Adding a page menu and an "About Me" section
+1. Adding a page menu and an "About Me" section
 
 ## Future (> 7/30/20) 
 1. This could be your suggestion! Send your ideas in #suggestions to be voted on. Suggestions with a substantial amount of upvotes will be taken into consideration.
