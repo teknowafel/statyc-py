@@ -150,10 +150,6 @@ button {
         margin-right: 20pt;
     }
 
-    * {
-        overflow-x: hidden;
-    }
-
     header,
     .article,
     footer {
@@ -184,11 +180,6 @@ button {
 
     img {
         margin-right: 10pt;
-    }
-
-    * {
-        /*width: 100vw;*/
-        overflow-x: hidden;
     }
 
     button {
