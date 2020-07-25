@@ -74,6 +74,6 @@ footer = footer.format(author = siteAuthor, copyright = siteCopyrightInfo)
 page += footer
 
 #writes the rendered page to the "out" folder
-file = open(dir + "/out/index.html", 'w')
+file = open(dir + "/docs/index.html", 'w')
 file.write(page)
 file.close()
