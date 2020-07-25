@@ -1,19 +1,19 @@
-# STATYC-PY ROADMAP
+# statyc-py roadmap
   
 This roadmap is divided into three categories; now, in-progress, and future. The meaning of these category titles is somewhat self-explainatory, so I won't be going into detail regarding said topic.
 
-## NOW (7/23/20)
+## Now (7/25/20)
 1. Multiple articles can be processed and laid out on the page
 2. The page is mobile-friendly thanks to well-written CSS
 3. Articles can be referenced by appending # followed by the article name to the end of the url
 4. Fixing code block width and removing the shadow
 5. A button at the end of each article to copy the permalink
-6. The button at the end of each article is stylized
+6. The buttons at the end of each article are stylized
+7. "Read More" / "Read Less" button to make scrolling through articles easier with fluid animations
 
-## IN-PROGRESS (7/23/20)
+## In-Progress (7/25/20)
 1. Improving site aesthetics
-2. Adding a menu and an "About Me" section
-3. "Read More" button to make scrolling through articles easier
+2. Adding a page menu and an "About Me" section
 
-## FUTURE (> 7/30/20) 
+## Future (> 7/30/20) 
 1. This could be your suggestion! Send your ideas in #suggestions to be voted on. Suggestions with a substantial amount of upvotes will be taken into consideration.
