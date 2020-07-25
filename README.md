@@ -18,4 +18,5 @@ Follow the directions in `statyc_settings.py` to set up things like your base UR
 2. The first line in the file should be the title of the post in plain text (capitalization allowed).
 3. The second line of the file should be the name of the author.
 4. The third line of the file should be the date, in whatever format you like (I recommend you keep date formatting consistent across posts for, you know, consistency).
-5. Following lines of the file will be parsed as the contents of the blog post. Keep in mind that you can add a line break in the file after the date, and formatting will stay the same. This is because markdown only renders line breaks if you add two trailing spaces to a the line. 
+5. Following lines of the file will be parsed as the contents of the blog post. Keep in mind that you can add a line break in the file after the date, and formatting will stay the same. This is because markdown only renders line breaks if you add two trailing spaces to a the line.
+6. Congratulations! You're pretty much done. All you have to do now is run `render.py`, and the site will magically(disclaimer:no magic involved) be rendered to /docs/.
