@@ -6,39 +6,35 @@
 
 html {
     height: 100%;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(15 30 40 / 1);
     overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
-    font-family: "Source Sans Pro";
+* {
+    font-family: 'Quicksand', sans-serif;
 }
 
 .titletext {
+    font-size: 20pt;
+    font-weight: bold;
     text-align: left;
-    margin-top: 5pt;
-    margin-bottom: 5pt;
-    margin-left: 20pt;
-    margin-right: 20pt;
+    margin: 0;
+    padding: 5pt 10px 0;
 }
 
-p,
-footer,
-h2,
-h4 {
+.titletext span {
+    display: block;
+    font-size: 15pt;
+    font-weight: normal;
+}
+
+p, footer, h2, h4 {
     color: rgb(40, 40, 40);
     margin-left: 20pt;
     margin-right: 20pt;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     margin-bottom: -10pt;
 }
 
@@ -56,18 +52,6 @@ footer {
     margin-right: 10pt;
 }
 
-header {
-    height: auto;
-    margin-top: 10pt;
-    text-align: center;
-    padding-bottom: 10pt;
-    display: block;
-    text-align: left;
-    color: white;
-    box-shadow: 0px 0px 10px black;
-    background-color: rgb(255, 91, 91);
-}
-
 .codehilite {
     display: block;
     padding-left: 10pt;
@@ -82,7 +66,7 @@ header {
     margin-top: 20pt;
     margin-bottom: 20pt;
     background-color: white;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 5px 5px 0px rgb(14 14 14 / 0.5), 0px 0px 5px 0px rgb(14 14 14 / 0.5);
     width: 48%;
     display: block;
     border-radius: 5pt;
@@ -90,27 +74,49 @@ header {
 
 .articleContent {
     position: relative;
-    padding: 5px 10px;
-    overflow-y: hidden;
-
-    -webkit-transition: all 0.7s ease-in-out;
-    -moz-transition: all 0.7s ease-in-out;
-    -o-transition: all 0.7s ease-in-out;
-    transition: all 0.7s ease-in-out;
+    max-height: 60pt;
+    min-height: 60pt;
+    padding: 10pt;
+    margin-bottom: 10pt;
+    overflow: hidden;
+    opacity: 0.5;
 }
 
-.articleContent[data-open="false"] {
-    max-height: 100px;
+.articleContent[data-open=false] {
+    max-height: 60pt !important;
 }
 
-.articleContent[data-open="false"]:after {
+.articleContent[data-open=true] {
+    opacity: 1;
+    transition: all .75s ease-in-out;
+}
+
+.articleContent[data-open=false] img {
+    display: none;
+}
+
+.articleContent[data-open=true] img {
+    border-radius: 5pt;
+    box-shadow: 0px 5px 5px 0px rgb(14 14 14 / 0.5), 0px 0px 5px 0px rgb(14 14 14 / 0.5);
+    max-width: calc(50% - 10pt);
+    max-height: 50%;
+    margin: 5pt
+}
+
+.articleContent:after {
     content: " ";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, transparent, white);
+    background-image: linear-gradient(to bottom, transparent, rgb(255, 255, 255, 0.85));
+    -webkit-transition: background-image 0.7s ease-in-out;
+    transition: background-image 0.7s ease-in-out;
+}
+
+.articleContent[data-open="true"]:after {
+    background: transparent;
 }
 
 img {
@@ -118,16 +124,34 @@ img {
     width: 100%;
 }
 
+header {
+    height: auto;
+    margin-top: 10pt;
+    text-align: center;
+    padding-bottom: 10pt;
+    display: block;
+    text-align: left;
+    color: white;
+}
+
 footer {
-    margin-bottom: 20pt;
+    margin-bottom: 5pt;
     margin-top: 10pt;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    background-color: rgb(137, 227, 255);
-    box-shadow: 0px 0px 10px black;
     text-align: center;
     border-radius: 5pt;
+}
+
+footer p{
+    color: white ;
+}
+
+button, footer, header {
+    color: white ;
+    background-color: rgb(77 188 222);
+    box-shadow: 0px 5px 5px 0px rgb(14 14 14 / 0.5), 0px 0px 5px 0px rgb(14 14 14 / 0.5);
 }
 
 button {
@@ -137,35 +161,29 @@ button {
     border-style: solid;
     border-width: 0px;
     padding: 4pt;
-    color: white;
-    background-color: rgb(255, 91, 91);
     display: inline;
     font-size: 10pt;
     transition: all 0.3s ease;
 }
 
-.readMoreButton{
+.readMoreButton {
     color: white;
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(67 81 90);
     margin-left: 2pt;
 }
 
 /* CSS FOR SMALL WINDOW SIZE */
+
 @media only screen and (max-width: 1200px) {
-    
     .content {
         margin-left: 20pt;
         margin-right: 20pt;
     }
-
     .codehilite {
         margin-left: 20pt;
         margin-right: 20pt;
     }
-
-    header,
-    .article,
-    footer {
+    header, .article, footer {
         width: 95%;
         overflow-x: hidden;
         border-radius: 5pt;
@@ -173,35 +191,22 @@ button {
 }
 
 /* CSS FOR MOBILE DEVICES */
-@media (hover:none),
-(hover:on-demand) {
 
-    h1,
-    h2,
-    h3,
-    h4,
-    p,
-    body,
-    .codehilite {
+@media (hover:none), (hover:on-demand) {
+    h1, h2, h3, h4, p, body, .codehilite {
         margin-left: 7pt;
         margin-right: 7pt;
     }
-
     .titletext {
         margin-left: 10pt;
     }
-
     img {
         margin-right: 10pt;
     }
-
     button {
         margin-left: 7pt;
     }
-
-    header,
-    .article,
-    footer {
+    header, .article, footer {
         /*width: 95%;*/
         overflow-x: hidden;
         box-shadow: none;
