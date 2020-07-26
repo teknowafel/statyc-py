@@ -1,4 +1,3 @@
-
 (function () {
 
 //ON CLICK ON "SHARE"

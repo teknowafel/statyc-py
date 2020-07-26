@@ -2,6 +2,11 @@
     margin-left: auto;
     margin-right: auto;
     overflow-x: hidden;
+    font-family: Source Sans Pro;
+}
+
+.codehilite {
+    font-family: consolas;
 }
 
 html {
@@ -10,16 +15,12 @@ html {
     overflow-x: hidden;
 }
 
-* {
-    font-family: "Source Sans Pro", sans-serif;
-}
-
 .titletext {
     font-size: 25pt;
     font-weight: bold;
     text-align: left;
     margin: 0;
-    padding: 5pt 10px 0;
+    padding: 5pt 20pt 0;
 }
 
 .titletext span {
@@ -80,8 +81,9 @@ footer {
     margin-bottom: 10pt;
     overflow: hidden;
     opacity: 0.5;
+    -webkit-transition: max-height 0.7s ease-in-out;
+    transition: max-height 0.7s ease-in-out;
 }
-
 .articleContent[data-open=false] {
     max-height: 60pt !important;
 }
@@ -110,9 +112,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to bottom, transparent, rgb(255, 255, 255, 0.85));
-    -webkit-transition: background-image 0.7s ease-in-out;
-    transition: background-image 0.7s ease-in-out;
+    background-image: linear-gradient(to bottom, transparent, rgb(255, 255, 255, 0.1));
 }
 
 .articleContent[data-open="true"]:after {
@@ -122,6 +122,7 @@ footer {
 img {
     display: block;
     width: 100%;
+    background-color: rgb(40, 40, 40);
 }
 
 header {
@@ -147,10 +148,10 @@ footer {
 }
 
 footer p{
-    color: white ;
+    color: rgb(40, 40, 40);
 }
 
-button, footer, header {
+footer, header {
     color: white ;
     box-shadow: 0px 5px 5px 0px rgb(14 14 14 / 0.5), 0px 0px 5px 0px rgb(14 14 14 / 0.5);
 }
@@ -161,6 +162,7 @@ button {
     margin-left: 20pt;
     border-style: solid;
     border-width: 0px;
+    color: white;
     background-color: rgb(255, 91, 91);
     padding: 4pt;
     display: inline;
@@ -170,7 +172,7 @@ button {
 
 .readMoreButton {
     color: white;
-    background-color: rgb(67 81 90);
+    background-color: rgb(40, 40, 40);
     margin-left: 2pt;
 }
 
@@ -189,6 +191,9 @@ button {
         width: 95%;
         overflow-x: hidden;
         border-radius: 5pt;
+    }
+    .titletext {
+        margin-left: 10pt;
     }
 }
 
