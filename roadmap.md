@@ -13,8 +13,7 @@ This roadmap is divided into three categories; now, in-progress, and future. The
 8. Improved site aesthetics
 
 ## In-Progress (7/26/20)
-1. Making post dates based upon the filename in yyyy-mm-dd format so that articles are automatically sorted by date
-2. Adding a page menu and an "About Me" section
+1. Adding a page menu and an "About Me" section
 
 ## Future (> 7/30/20) 
 1. This could be your suggestion! Send your ideas in #suggestions to be voted on. Suggestions with a substantial amount of upvotes will be taken into consideration.
