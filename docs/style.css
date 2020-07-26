@@ -127,7 +127,7 @@ button {
     background-color: rgb(255, 91, 91);
     display: inline;
     font-size: 10pt;
-    outline: none;
+    transition: all 0.3s ease;
 }
 
 .readMoreButton{
