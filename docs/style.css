@@ -89,14 +89,28 @@ header {
 }
 
 .articleContent {
-    max-height: 60pt;
-    margin-bottom: 5pt;
+    position: relative;
+    padding: 5px 10px;
     overflow-y: hidden;
 
     -webkit-transition: all 0.7s ease-in-out;
     -moz-transition: all 0.7s ease-in-out;
     -o-transition: all 0.7s ease-in-out;
     transition: all 0.7s ease-in-out;
+}
+
+.articleContent[data-open="false"] {
+    max-height: 100px;
+}
+
+.articleContent[data-open="false"]:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, white);
 }
 
 img {
@@ -127,7 +141,7 @@ button {
     background-color: rgb(255, 91, 91);
     display: inline;
     font-size: 10pt;
-    outline: none;
+    transition: all 0.3s ease;
 }
 
 .readMoreButton{
