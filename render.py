@@ -32,6 +32,7 @@ header = header.format(title = siteTitle, subtitle = siteSubTitle)
 #appends the new head to the page
 page += header
 
+#loop to parse each blog post
 for filename in os.listdir(dir + "/in/posts/"):
     print(filename)
 

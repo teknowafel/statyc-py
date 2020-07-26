@@ -1,3 +1,6 @@
+//GETS BASE URL OF SITE
+const baseURL =  window.location.origin;
+
 (function () {
 
 //ON CLICK ON "SHARE"
@@ -9,7 +12,7 @@
     let SELECTED = document.createElement('textarea');
 
     //SET THE TEXT GENERATED
-    SELECTED.value = 'https://teknowafel.github.io/statyc-py/index.html#' + ID.replace("btn", "");
+    SELECTED.value = baseURL + '/index.html#' + ID.replace("btn", "");
 
     //COPY THE TEXT
     document.body.appendChild(SELECTED);
