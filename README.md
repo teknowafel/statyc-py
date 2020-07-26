@@ -1,5 +1,5 @@
 <img src="https://i.ibb.co/5WjRjr1/logo.png" width="250">
-[teknowafel.github.io/statyc-py/](https://teknowafel.github.io/statyc-py/)
+<a href="https://teknowafel.github.io/statyc-py/">Demo Site</a>
 
 ## What is statyc-py?
 statyc-py is a simple static site generator written in python, which generates a clean, minimalistic blog style website with seamless support for mobile and desktop devices alike.
