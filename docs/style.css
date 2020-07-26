@@ -97,7 +97,10 @@ footer {
 }
 
 .articleContent[data-open=false] img {
-    display: none;
+    /*display: none;*/
+    opacity: 0;
+    max-width: calc(50% - 10pt);
+    margin: 5pt 5pt 0pt 0pt;
 }
 
 .articleContent[data-open=true] img {
@@ -114,7 +117,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to bottom, transparent, rgb(255, 255, 255, 0.1));
+    background-image: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
 }
 
 .articleContent[data-open="true"]:after {
