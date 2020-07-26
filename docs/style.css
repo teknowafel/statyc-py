@@ -209,9 +209,6 @@ button {
         margin-left: 7pt;
         margin-right: 7pt;
     }
-    .titletext {
-        margin-left: 10pt;
-    }
     img {
         margin-right: 10pt;
     }
@@ -219,7 +216,7 @@ button {
         margin-left: 7pt;
     }
     header, .article, footer {
-        /*width: 95%;*/
+        width: 95%;
         overflow-x: hidden;
         box-shadow: none;
         border-radius: 5pt;
