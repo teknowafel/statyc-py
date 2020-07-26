@@ -84,6 +84,10 @@ footer {
     transition: all .75s ease-in-out;
 }
 
+.articleContent img {
+    transition: all .75s ease-in-out;
+}
+
 .articleContent[data-open=false] {
     max-height: 60pt !important;
 }
