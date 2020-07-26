@@ -61,7 +61,7 @@ for filename in os.listdir(dir + "/in/posts/"):
 
 
     #formats the post template using info
-    renderedPost = postTemplate.format(baseURL = baseURL, articleName = articleName, articleTitle = postName, articleAuthor = postAuthor, articleDate = postDate, articleContent = contentHTML)
+    renderedPost = postTemplate.format(articleName = articleName, articleTitle = postName, articleAuthor = postAuthor, articleDate = postDate, articleContent = contentHTML)
 
     #appends the body to the page
     page += renderedPost
