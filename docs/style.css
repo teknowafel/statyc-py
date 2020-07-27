@@ -256,7 +256,7 @@ button {
         margin-left: 20pt;
         margin-right: 20pt;
     }
-    header, .article, footer {
+    header, .article, footer, .menubar {
         width: 95%;
         overflow-x: hidden;
         border-radius: 5pt;
@@ -279,7 +279,7 @@ button {
     button {
         margin-left: 7pt;
     }
-    header, .article, footer {
+    header, .article, footer, .menubar {
         width: 95%;
         overflow-x: hidden;
         box-shadow: none;
