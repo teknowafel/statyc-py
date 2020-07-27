@@ -3,8 +3,13 @@
 <head>
     <title>{title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="native.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preload" href="native.css" as="style">
+    <link rel="stylesheet" href="native.css" media="print" onload="this.media='all'">
+
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    
     <link rel="icon" href="favicon.ico" type="image/x-icon"> 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
 </head>
