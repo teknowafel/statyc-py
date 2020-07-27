@@ -11,12 +11,11 @@ html {
 }
 
 .titletext, footer, h2, h4 {
-    /*font-family: Helvetica, Arial, sans-serif;*/
     font-family: 'Century Gothic', 'Futura';
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
     font-size: 12pt !important;
 }
 
