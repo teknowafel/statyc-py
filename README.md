@@ -23,4 +23,4 @@ Follow the directions in `statyc_settings.py` to set up things like your base UR
 6. Congratulations! You're pretty much done. All you have to do now is run `render.py`, and the site will magically(disclaimer:no magic involved) be rendered to /docs/.
 
 ## Roadmap
-Don't forget to checkout roadmap.md, or click [here](https://github.com/teknowafel/statyc-py/blob/master/roadmap.md) to learn more about the past, present, and future of statyc-py.
+Don't forget to checkout roadmap.md, or click [here](https://github.com/teknowafel/statyc-py/blob/master/roadmap.md) to learn more about the past, present, and future of statyc-py.  
