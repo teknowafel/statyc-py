@@ -2,11 +2,6 @@
     margin-left: auto;
     margin-right: auto;
     overflow-x: hidden;
-    font-family: Source Sans Pro;
-}
-
-.codehilite {
-    font-family: consolas;
 }
 
 html {
@@ -16,11 +11,12 @@ html {
 }
 
 .titletext {
+    font-family: Source Sans Pro;
     font-size: 25pt;
     font-weight: bold;
     text-align: left;
-    margin: 0;
-    padding: 5pt 20pt 0;
+    margin-left: 10pt;
+    margin-top: 5pt;
 }
 
 .titletext span {
@@ -33,6 +29,7 @@ p, footer, h2, h4 {
     color: rgb(40, 40, 40);
     margin-left: 20pt;
     margin-right: 20pt;
+    font-family: Source Sans Pro;
 }
 
 h1, h2, h3, h4 {
@@ -117,7 +114,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
+    background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.7));
 }
 
 .articleContent[data-open="true"]:after {
@@ -198,7 +195,7 @@ button {
         border-radius: 5pt;
     }
     .titletext {
-        margin-left: 10pt;
+        margin-left: 20pt;
     }
 }
 
@@ -220,5 +217,8 @@ button {
         overflow-x: hidden;
         box-shadow: none;
         border-radius: 5pt;
+    }
+    .titletext {
+        margin-left: 7pt;
     }
 }
