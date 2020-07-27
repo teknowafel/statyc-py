@@ -86,7 +86,7 @@ footer {
     margin-bottom: 10pt;
     overflow: hidden;
     opacity: 0.7;
-    transition: all .75s ease-in-out;
+    transition: max-height .75s ease-in-out;
 }
 
 .articleContent img {
@@ -177,7 +177,6 @@ button {
     padding: 4pt;
     display: inline;
     font-size: 10pt;
-    transition: all 2s ease;
 }
 
 .readMoreButton {
