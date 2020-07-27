@@ -4,6 +4,34 @@
     overflow-x: hidden;
 }
 
+
+.bg {
+    z-index: -10;
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: linear-gradient(-90deg, rgb(30,30,30), rgb(70,70,70));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+  
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 html {
     height: 100%;
     background-color: rgb(40, 40, 40);
@@ -67,7 +95,7 @@ footer {
     border-radius: 5pt;
 }
 
-.article {
+.article{
     padding-bottom: 10pt;
     margin-top: 20pt;
     margin-bottom: 20pt;
@@ -76,6 +104,37 @@ footer {
     width: 48%;
     display: block;
     border-radius: 5pt;
+}
+
+.menubar {
+    margin-top: 20pt;
+    border-radius: 5pt;
+    height: auto;
+    width: 48%;
+    display: block;
+    justify-content: space-between;
+    padding-top: 7pt;
+    padding-bottom: 7pt;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.menubar a {
+    padding-top: 8pt;
+    padding-bottom: 6pt;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    color: white;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    border-bottom: 2pt solid transparent;
+}
+
+.menubar a:hover {
+    border-radius: 5pt;
+    border-bottom: 2pt solid rgb(255, 91, 91);
+    color: rgb(255, 91, 91);
+    background-color: rgb(59, 59, 59);
 }
 
 .articleContent {
@@ -136,14 +195,15 @@ img {
 }
 
 header {
+    position: relative;
     height: auto;
     margin-top: 10pt;
-    text-align: center;
     padding-bottom: 10pt;
     display: block;
     text-align: left;
     background-color: rgb(255, 91, 91);
     color: white;
+    z-index: 1;
 }
 
 footer {
