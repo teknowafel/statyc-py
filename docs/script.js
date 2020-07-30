@@ -1,5 +1,5 @@
 //GETS BASE URL OF SITE
-var baseURL = window.location.origin+window.location.pathname;
+const baseURL = window.location.origin+window.location.pathname;
 
 (function () {
 
