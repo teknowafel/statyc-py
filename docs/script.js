@@ -1,5 +1,5 @@
 //GETS BASE URL OF SITE
-const baseURL =  window.location;
+var baseURL = window.location.origin+window.location.pathname;
 
 (function () {
 
@@ -12,7 +12,7 @@ const baseURL =  window.location;
     let SELECTED = document.createElement('textarea');
 
     //SET THE TEXT GENERATED
-    SELECTED.value = baseURL + 'index.html#' + ID.replace("btn", "");
+    SELECTED.value = baseURL + '#' + ID.replace("btn", "");
 
     //COPY THE TEXT
     document.body.appendChild(SELECTED);
