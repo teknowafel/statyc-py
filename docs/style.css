@@ -108,10 +108,12 @@ footer {
 
 .scroller {
     position: fixed;
-    color: white;
-    font-size: 20pt;
-    margin-left: auto;
-    margin-right: 10pt;
+    right: 17pt;
+    bottom: 10pt;
+}
+
+.scroller button {
+    text-align: center;
 }
 
 .menubar {

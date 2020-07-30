@@ -14,6 +14,7 @@ This roadmap is divided into three categories; now, in-progress, and future. The
 
 ## In-Progress (7/30/20)
 1. Adding a page menu and an "About Me" section
+2. Adding a button at the bottom of the screen to scroll to the top
 
 ## Future (> 8/10/20) 
 1. This could be your suggestion! Send your ideas in #suggestions to be voted on. Suggestions with a substantial amount of upvotes will be taken into consideration.
