@@ -124,6 +124,8 @@ footer {
     font-size: 0pt;
     transition: all .2s ease-in-out;
     outline: none;
+    background-size: 100% 210%;
+    background-image: linear-gradient(to top, rgb(77, 188, 222, 1) 50%, rgb(255, 91, 91) 50%);
 }
 
 .scroller:hover {
@@ -136,6 +138,7 @@ footer {
     background-color: rgb(77 188 222);
     font-size: 15pt;
     opacity: 1;
+    background-position: 0 100%;
 }
 
 .scroller button .icon {
@@ -296,7 +299,7 @@ button {
     background-color: rgb(255, 91, 91);
     padding: 4pt;
     display: inline;
-    font-size: 12pt;
+    font-size: 10pt;
 }
 
 .readMoreButton {
@@ -359,7 +362,7 @@ button {
     .scroller button {
         font-size: 0pt;
     }
-    .scroller button:active; {
+    .scroller button:focus {
         width: 35pt;
         transition: all 0.2s ease-in-out;
         background-color: rgb(77 188 222);
