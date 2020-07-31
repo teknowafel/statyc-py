@@ -146,9 +146,6 @@ footer {
     transition: all 0.2s ease-in-out;
     margin-left: auto;
     margin-right: auto;
-}
-
-.icon {
     display: block;
     background-color: rgba(255, 255, 255, 0);
     filter: invert(100%) sepia(7%) saturate(1088%) hue-rotate(187deg) brightness(119%) contrast(100%);
@@ -198,6 +195,14 @@ footer {
     border-bottom: 2pt solid rgb(255, 91, 91);
     color: rgb(255, 91, 91);
     background-color: rgb(59, 59, 59);
+}
+
+.article button {
+    transition: opacity .1s ease-in-out;
+}
+
+.article button:hover {
+    opacity: 0.75;
 }
 
 .articleContent {
@@ -297,9 +302,16 @@ button {
     border-width: 0px;
     color: white;
     background-color: rgb(255, 91, 91);
+    outline: none;
     padding: 4pt;
     display: inline;
     font-size: 10pt;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+button span {
+    font-size: 8pt;
 }
 
 .readMoreButton {
@@ -369,4 +381,11 @@ button {
         font-size: 15pt;
         opacity: 1;
     }
+    .article button {
+        transition: unset;
+    }
+    .article button:hover {
+        opacity: unset;
+    }
+    
 }

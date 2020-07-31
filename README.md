@@ -4,6 +4,13 @@
 ## What is statyc-py?
 statyc-py is a simple static site generator written in python, which generates a clean, minimalistic blog style website with seamless support for mobile and desktop devices alike.
 
+## Why go statyc?
+Unlike dynamically rendered websites which rely on the server to generate their html on the fly, static sites are prerendered to simple HTML files beforehand with a generator such as this one. Static sites are generally much faster than dynamic websites, with popular options being Hugo and Jekyll. These site generators are great, but statyc-py makes fast performance and ease of use, and easy customization its top priorities. Here's how:
+1. Fewer external dependencies => requests => trackers
+2. Simple, fast, and polished CSS and JS
+3. An easy-to-use writing process to up your workflow
+4. Meticulous attention to detail and daily tweaks/updates for the best experience
+
 ## How does statyc-py work?
 statyc-py uses two simple sources for the information used to build the site.
 1. statyc_settings.py
