@@ -3,6 +3,13 @@ const baseURL = window.location.origin+window.location.pathname;
 
 (function () {
 
+//ON CLICK ON SCOLLER
+  $(".scroller button").on("click", function () {
+    
+    $("html, body").animate({scrollTop : 0},500);
+
+  });
+
 //ON CLICK ON "SHARE"
 
   $(".article .copyButton").on("click", function () {

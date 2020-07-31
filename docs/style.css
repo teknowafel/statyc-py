@@ -107,13 +107,55 @@ footer {
 }
 
 .scroller {
+    z-index: 1;
     position: fixed;
-    right: 17pt;
+    right: 10pt;
     bottom: 10pt;
+    align-content: center;
+    transition: all 300ms cubic-bezier(.6,.44,0,1.39);
 }
 
 .scroller button {
+    opacity: .75;
+    width: 25pt;
+    color: white;
+    font-family: 'Consolas', monospace;
     text-align: center;
+    font-size: 0pt;
+    transition: all .2s ease-in-out;
+    outline: none;
+}
+
+.scroller:hover {
+    bottom: 15pt;
+}
+
+.scroller button:hover {
+    width: 35pt;
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(77 188 222);
+    font-size: 15pt;
+    opacity: 1;
+}
+
+.scroller button .icon {
+    width: 70%;
+    transition: all 0.2s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon {
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    filter: invert(100%) sepia(7%) saturate(1088%) hue-rotate(187deg) brightness(119%) contrast(100%);
+}
+
+.copyButton .icon {
+    display: inline;
+    width: 11pt;
+    height: 11pt;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .menubar {
@@ -139,6 +181,13 @@ footer {
     text-decoration: none;
     transition: all .2s ease-in-out;
     border-bottom: 2pt solid transparent;
+}
+
+.menubar a:hover {
+    border-radius: 5pt;
+    border-bottom: 2pt solid rgb(255, 91, 91);
+    color: rgb(255, 91, 91);
+    background-color: rgb(59, 59, 59);
 }
 
 .menubar a:hover {
@@ -247,7 +296,7 @@ button {
     background-color: rgb(255, 91, 91);
     padding: 4pt;
     display: inline;
-    font-size: 10pt;
+    font-size: 12pt;
 }
 
 .readMoreButton {
@@ -291,12 +340,30 @@ button {
         margin-left: 7pt;
     }
     header, .article, footer, .menubar {
+        margin-top: 10pt;
         width: 95%;
-        overflow-x: hidden;
+        overflow: hidden;
         box-shadow: none;
         border-radius: 5pt;
     }
     .titletext {
         margin-left: 7pt;
+    }
+    .scroller button {
+        color: white;
+        font-size: 14pt;
+    }
+    .article {
+        margin-bottom: 0pt;
+    }
+    .scroller button {
+        font-size: 0pt;
+    }
+    .scroller button:active; {
+        width: 35pt;
+        transition: all 0.2s ease-in-out;
+        background-color: rgb(77 188 222);
+        font-size: 15pt;
+        opacity: 1;
     }
 }
