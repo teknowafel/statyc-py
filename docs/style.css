@@ -39,11 +39,11 @@ html {
 }
 
 .titletext, footer, h2, h4 {
-    font-family: 'Century Gothic', 'Futura';
+    font-family: Arial, 'Century Gothic', 'Futura';
 }
 
 p {
-    font-family: 'Source Sans Pro', 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Source Sans Pro', 'Franklin Gothic Light', Arial, sans-serif;
     font-size: 12pt !important;
 }
 
@@ -132,11 +132,20 @@ footer {
     bottom: 15pt;
 }
 
-.scroller button:hover {
+/*.scroller button:hover {
     width: 35pt;
     transition: all 0.2s ease-in-out;
     background-color: rgb(77 188 222);
     font-size: 15pt;
+    opacity: 1;
+    background-position: 0 100%;
+}*/
+.scroller button:hover {
+    width: 35pt;
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(77 188 222);
+    font-size: 12pt;
+    text-transform: uppercase;
     opacity: 1;
     background-position: 0 100%;
 }
