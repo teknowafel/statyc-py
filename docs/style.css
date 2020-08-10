@@ -258,7 +258,8 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 1));
+    background-image: linear-gradient(top rgb(255 255 255 / 0.001%), rgb(255 255 255));
+    background-image: -webkit-linear-gradient(top, rgb(255 255 255 / 0.001%), rgb(255 255 255));
 }
 
 .articleContent[data-open="true"]:after {
