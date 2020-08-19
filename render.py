@@ -32,8 +32,16 @@ header = header.format(title = siteTitle, subtitle = siteSubTitle)
 #appends the new head to the page
 page += header
 
+#gets list of files
+files = os.listdir(dir + "/in/posts/")
+#sorts the list of files
+sortedFiles = sorted(files)
+#reverses the list (latest comes first)
+sortedFiles.reverse()
+
+
 #loop to parse each blog post
-for filename in os.listdir(dir + "/in/posts/"):
+for filename in sortedFiles:
     print(filename)
 
     #opens the post template
