@@ -22,7 +22,7 @@ statyc-py has been tested to work with python 3.8.3. Simply fork, clone, or down
 
 ## Quick Start Guide
 Follow the directions in `statyc_settings.py` to set up things like your base URL, and you're almost done. You can make a new `.md` file inside of `/in/posts` to create a new post. To make sure that statyc-py properly reads the post, you can follow these guidelines, or use one of the default posts as a reference.
-1. The name of the file should be a short version of the post title, with dashes (-) instead of spaces, and no capitalization.
+1. The name of the file should be a short version of the post title, beginning with the date in `yyyy-mm-dd` format, with dashes (-) instead of spaces, and no capitalization.
 2. The first line in the file should be the title of the post in plain text (capitalization allowed).
 3. The second line of the file should be the name of the author.
 4. The third line of the file should be the date, in whatever format you like (I recommend you keep date formatting consistent across posts for, you know, consistency).
