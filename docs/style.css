@@ -152,13 +152,6 @@ footer {
     filter: invert(100%) sepia(7%) saturate(1088%) hue-rotate(187deg) brightness(119%) contrast(100%);
 }
 
-.copyButton .icon {
-    display: inline;
-    width: 11pt;
-    height: 11pt;
-    background-color: rgba(255, 255, 255, 0);
-}
-
 .menubar {
     margin-top: 20pt;
     border-radius: 5pt;
