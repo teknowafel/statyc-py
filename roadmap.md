@@ -18,6 +18,7 @@ This roadmap is divided into three categories; now, in-progress, and future. The
 ## In-Progress (8/20/20)
 1. Rich theme support with simple packaging
     - In-depth documentation for said themes
+2. Making a trello because?
 
 ## Future (> 9/20/20) 
 1. JQuery based search box
