@@ -14,12 +14,30 @@
     bottom: -50%;
     width: 200%;
     height: 200vh;
-    background: rgb(30, 30, 30);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+    background: rgb(40, 40, 40);
 }
   
+#searchbox {
+    background-color: rgb(60, 60, 60);
+    border: none;
+    color: white;
+    font-size: 12pt;
+    border-radius: 5pt;
+    padding: 2pt;
+    margin-bottom: 1pt;
+    margin-right: 5pt;
+    float: right;
+    transition: all .2s ease-in-out;
+}
 
+
+#searchbox:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.search-found {
+    background-color: #FFFF00;
+}
 
 html {
     height: 100%;
@@ -27,7 +45,7 @@ html {
     overflow-x: hidden;
 }
 
-.titletext, footer, h2, h4 {
+.titletext, footer, h2, h4, input {
     font-family: Arial, 'Century Gothic', 'Futura';
 }
 
@@ -149,7 +167,7 @@ footer {
     display: block;
     justify-content: space-between;
     padding-top: 7pt;
-    padding-bottom: 7pt;
+    padding-bottom: 4pt;
     background-color: rgba(255, 255, 255, 0.15);
     box-shadow: 0px 5px 5px 0px rgb(14 14 14 / 0.5), 0px 0px 5px 0px rgb(14 14 14 / 0.5);
 }
@@ -159,7 +177,7 @@ footer {
     padding-left: 5pt;
     padding-right: 5pt;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14pt;
+    font-size: 13pt;
     color: white;
     text-decoration: none;
     transition: all .2s ease-in-out;

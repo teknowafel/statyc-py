@@ -3,6 +3,19 @@ const baseURL = window.location.origin+window.location.pathname;
 
 (function () {
 
+  //SEARCH THING! HANDLES SEARCH BOX
+  $("#searchbox").keyup(function() {
+    //Gets the value in the search box
+    var searchedText = $("#searchbox").val();
+    $("p:contains('"+searchedText+"')").each( function( i, element ) {
+      var content = $(element).text();
+      //Adds the highlighting
+      content = content.replace( searchedText, '<span class="search-found">' + searchedText + '</span>' );
+      $(element).html( content );
+    });
+
+  });
+
 //ON CLICK ON SCOLLER
   $(".scroller button").on("click", function () {
     $("html, body").animate({scrollTop : 0},500);
