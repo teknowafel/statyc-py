@@ -2,6 +2,7 @@
 import os
 from statyc_settings import settings
 from markdown2 import markdown
+from shutil import copytree, rmtree
 
 #gets information from statyc_settings.py
 baseURL = settings.baseURL + "/index.html"
@@ -9,6 +10,7 @@ siteTitle = settings.title
 siteSubTitle = settings.subtitle
 siteAuthor = settings.author
 siteCopyrightInfo = settings.copyright
+theme = settings.theme
 
 #initializes a string in which the page will be stored
 page = ""
@@ -17,7 +19,7 @@ page = ""
 dir = os.getcwd()
 
 #opens the head template and inserts the site name
-file = open(dir + "/templates/head.html", 'r')
+file = open(dir + "/themes/%s/templates/head.html" % theme, 'r')
 head = file.read()
 file.close()
 head = head.format(title = siteTitle)
@@ -25,7 +27,7 @@ head = head.format(title = siteTitle)
 page += head
 
 #opens the header template and inserts the site title and subtitle
-file = open(dir + "/templates/header.html", 'r')
+file = open(dir + "/themes/%s/templates/header.html" % theme, 'r')
 header = file.read()
 file.close()
 header = header.format(title = siteTitle, subtitle = siteSubTitle)
@@ -45,7 +47,7 @@ for filename in sortedFiles:
     print(filename)
 
     #opens the post template
-    file = open(dir + "/templates/article.html", 'r')
+    file = open(dir + "/themes/%s/templates/article.html" % theme, 'r')
     postTemplate = file.read()
     file.close()
 
@@ -75,14 +77,24 @@ for filename in sortedFiles:
     page += renderedPost
 
 #opens the footer template and inserts the name and copyright info
-file = open(dir + "/templates/footer.html", 'r')
+file = open(dir + "/themes/%s/templates/footer.html" % theme, 'r')
 footer = file.read()
 file.close()
 footer = footer.format(author = siteAuthor, copyright = siteCopyrightInfo)
 #appends the footer to the rest of the page
 page += footer
 
-#writes the rendered page to the "out" folder
+#gets rid of the /docs folder for the new files to be copied
+if os.path.isfile(dir + "/docs"):
+    rmtree(dir + "/docs")
+#copies the static resources from the specific theme to the /docs folder
+fromDir = "themes/%s/static" % theme
+toDir = dir + "/docs"
+copytree(fromDir, toDir)
+print("copied!")
+
+#creates and writes the rendered page to the "out" folder
 file = open(dir + "/docs/index.html", 'w')
 file.write(page)
 file.close()
+

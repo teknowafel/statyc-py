@@ -1,5 +1,8 @@
 #This file is for changing settings. Do not try to execute this file on its own, as it won't do anything.
 class settings:
+    #replace "theme-default" with the name of the theme you would like to use
+    theme = "theme-default"
+
     #replace "https://teknowafel.github.io/statyc-py/" with the base URL of the site
     baseURL = "https://teknowafel.github.io/statyc-py/"
 
