@@ -85,7 +85,7 @@ footer = footer.format(author = siteAuthor, copyright = siteCopyrightInfo)
 page += footer
 
 #gets rid of the /docs folder for the new files to be copied
-if os.path.isfile(dir + "/docs"):
+if os.path.isdir(dir + "/docs"):
     rmtree(dir + "/docs")
 #copies the static resources from the specific theme to the /docs folder
 fromDir = "themes/%s/static" % theme
