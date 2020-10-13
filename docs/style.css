@@ -1,0 +1,393 @@
+* {
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+
+
+.bg {
+    z-index: -10;
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: rgb(40, 40, 40);
+}
+  
+#searchbox {
+    background-color: rgb(60, 60, 60);
+    border: none;
+    color: white;
+    font-size: 12pt;
+    border-radius: 5pt;
+    padding: 2pt;
+    margin-bottom: 1pt;
+    margin-right: 5pt;
+    float: right;
+    transition: all .2s ease-in-out;
+}
+
+
+#searchbox:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.search-found {
+    background-color: #FFFF00;
+}
+
+html {
+    height: 100%;
+    background-color: rgb(40, 40, 40);
+    overflow-x: hidden;
+}
+
+.titletext, footer, h2, h4, input {
+    font-family: Arial, 'Century Gothic', 'Futura';
+}
+
+p {
+    font-family: 'Source Sans Pro', 'Franklin Gothic Light', Arial, sans-serif;
+    font-size: 12pt !important;
+}
+
+.titletext {
+    font-size: 25pt;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10pt;
+    margin-top: 5pt;
+}
+
+.titletext span {
+    display: block;
+    font-size: 15pt;
+    font-weight: normal;
+}
+
+p, footer, h2, h4 {
+    color: rgb(40, 40, 40);
+    margin-left: 20pt;
+    margin-right: 20pt;
+}
+
+
+h1, h2, h3, h4 {
+    margin-bottom: -10pt;
+}
+
+body {
+    text-align: left;
+    font-size: 12pt;
+}
+
+footer {
+    width: 48%;
+}
+
+.content {
+    margin-left: 10pt;
+    margin-right: 10pt;
+}
+
+.codehilite {
+    display: block;
+    padding-left: 10pt;
+    margin-bottom: 10pt;
+    margin-left: 20pt;
+    margin-right: 20pt;
+    border-radius: 5pt;
+}
+
+.article{
+    padding-bottom: 10pt;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px rgb(14 14 14 / 0.5), 0px 0px 5px 0px rgb(14 14 14 / 0.5);
+    width: 48%;
+    display: block;
+    border-radius: 5pt;
+}
+
+.scroller {
+    z-index: 1;
+    position: fixed;
+    right: 10pt;
+    bottom: 10pt;
+    align-content: center;
+    transition: all 300ms cubic-bezier(.6,.44,0,1.39);
+}
+
+.scroller button {
+    opacity: .75;
+    width: 25pt;
+    color: white;
+    font-family: 'Consolas', monospace;
+    text-align: center;
+    font-size: 0pt;
+    transition: all .2s ease-in-out;
+    outline: none;
+    background-size: 100% 210%;
+    background-image: linear-gradient(to top, rgb(77, 188, 222, 1) 50%, rgb(255, 91, 91) 50%);
+}
+
+.scroller:hover {
+    bottom: 15pt;
+}
+
+.scroller button:hover {
+    width: 35pt;
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(77 188 222);
+    font-size: 12pt;
+    text-transform: uppercase;
+    opacity: 1;
+    background-position: 0 100%;
+}
+
+.scroller button .icon {
+    width: 70%;
+    transition: all 0.2s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    filter: invert(100%) sepia(7%) saturate(1088%) hue-rotate(187deg) brightness(119%) contrast(100%);
+}
+
+.menubar {
+    margin-top: 10pt;
+    border-radius: 5pt;
+    height: auto;
+    width: 48%;
+    display: block;
+    justify-content: space-between;
+    padding-top: 7pt;
+    padding-bottom: 5pt;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 5px 5px 0px rgb(14 14 14 / 0.5), 0px 0px 5px 0px rgb(14 14 14 / 0.5);
+}
+.menubar a {
+    padding-top: 8pt;
+    padding-bottom: 6pt;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    color: white;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    border-bottom: 2pt solid transparent;
+}
+
+.menubar a:hover {
+    border-radius: 5pt;
+    border-bottom: 2pt solid rgb(255, 91, 91);
+    color: rgb(255, 91, 91);
+    background-color: rgb(59, 59, 59);
+}
+
+.menubar a:hover {
+    border-radius: 5pt;
+    border-bottom: 2pt solid rgb(255, 91, 91);
+    color: rgb(255, 91, 91);
+    background-color: rgb(59, 59, 59);
+}
+
+.article button {
+    transition: opacity .1s ease-in-out;
+}
+
+.article button:hover {
+    opacity: 0.75;
+}
+
+.articleContent {
+    position: relative;
+    max-height: 60pt;
+    min-height: 60pt;
+    padding: 10pt;
+    margin-bottom: 10pt;
+    overflow: hidden;
+    opacity: 0.7;
+    transition: max-height .75s ease-in-out;
+}
+
+.articleContent img {
+    transition: all .75s ease-in-out;
+}
+
+.articleContent[data-open=false] {
+    max-height: 60pt !important;
+}
+
+.articleContent[data-open=true] {
+    opacity: 1;
+}
+
+.articleContent[data-open=false] img {
+    /*display: none;*/
+    opacity: 0;
+    max-width: calc(50% - 10pt);
+    margin: 5pt 5pt 0pt 0pt;
+}
+
+.articleContent[data-open=true] img {
+    border-radius: 5pt;
+    max-width: calc(50% - 10pt);
+    max-height: 50%;
+    margin: 5pt 5pt 0pt 0pt;
+}
+
+.articleContent:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(-90deg, rgb(255 255 255 / 0.001%), rgb(255 255 255));
+    background-image: -webkit-linear-gradient(-90deg, rgb(255 255 255 / 0.001%), rgb(255 255 255));
+}
+
+.articleContent[data-open="true"]:after {
+    display: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+}
+
+header {
+    position: relative;
+    height: auto;
+    margin-top: 10pt;
+    padding-bottom: 10pt;
+    display: block;
+    text-align: left;
+    background-color: rgb(255, 91, 91);
+    color: white;
+    z-index: 1;
+}
+
+footer {
+    margin-bottom: 5pt;
+    margin-top: 10pt;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: rgb(77 188 222);
+    text-align: center;
+    border-radius: 5pt;
+}
+
+footer p{
+    color: rgb(40, 40, 40);
+}
+
+footer, header {
+    color: white ;
+    box-shadow: 0px 5px 5px 0px rgb(14 14 14 / 0.5), 0px 0px 5px 0px rgb(14 14 14 / 0.5);
+}
+
+button {
+    border-radius: 4pt;
+    font-weight: bold;
+    margin-left: 20pt;
+    border-style: solid;
+    border-width: 0px;
+    color: white;
+    background-color: rgb(255, 91, 91);
+    outline: none;
+    padding: 4pt;
+    display: inline;
+    font-size: 10pt;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+button span {
+    font-size: 8pt;
+}
+
+.readMoreButton {
+    color: white;
+    background-color: rgb(40, 40, 40);
+    margin-left: 2pt;
+}
+
+/* CSS FOR SMALL WINDOW SIZE */
+
+@media only screen and (max-width: 1400px) {
+    .content {
+        margin-left: 20pt;
+        margin-right: 20pt;
+    }
+    .codehilite {
+        margin-left: 20pt;
+        margin-right: 20pt;
+    }
+    header, .article, footer, .menubar {
+        width: 95%;
+        overflow-x: hidden;
+        border-radius: 5pt;
+    }
+    .titletext {
+        margin-left: 20pt;
+    }
+}
+
+/* CSS FOR MOBILE DEVICES */
+
+@media (hover:none), (hover:on-demand) {
+    h1, h2, h3, h4, p, body, .codehilite {
+        margin-left: 7pt;
+        margin-right: 7pt;
+    }
+    img {
+        margin-right: 10pt;
+    }
+    button {
+        margin-left: 7pt;
+    }
+    header, .article, footer, .menubar {
+        margin-top: 10pt;
+        width: 95%;
+        overflow: hidden;
+        box-shadow: none;
+        border-radius: 5pt;
+    }
+    .titletext {
+        margin-left: 7pt;
+    }
+    .scroller button {
+        color: white;
+        font-size: 14pt;
+    }
+    .article {
+        margin-bottom: 0pt;
+    }
+    .scroller button {
+        font-size: 0pt;
+    }
+    .scroller button:focus {
+        width: 35pt;
+        transition: all 0.2s ease-in-out;
+        background-color: rgb(77 188 222);
+        font-size: 15pt;
+        opacity: 1;
+    }
+    .article button {
+        transition: unset;
+    }
+    .article button:hover {
+        opacity: unset;
+    }
+    
+}
