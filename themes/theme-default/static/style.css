@@ -51,7 +51,8 @@ html {
 
 p {
     font-family: 'Source Sans Pro', 'Franklin Gothic Light', Arial, sans-serif;
-    font-size: 12pt !important;
+    font-size: 13pt !important;
+    line-height: 1.7 !important;
 }
 
 .titletext {
