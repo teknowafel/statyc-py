@@ -18,7 +18,7 @@ statyc-py uses two simple sources for the information used to build the site.
 Simply put, render.py gets information from settings such as the site title, subtitle, and author along with each post. After this, it parses your blog posts using [python-markdown2](https://github.com/trentm/python-markdown2) and wraps it all together in a somewhat readable HTML burrito.
 
 ## How do I install statyc-py?
-statyc-py has been tested to work with python 3.8.3. Simply fork, clone, or download this repository to get started. Then, you can run `pip install -r requirements.txt` to install needed dependencies. 
+statyc-py has been tested to work with python 3.7 and 3.8.3. Simply fork, clone, or download this repository to get started. Then, you can run `pip install -r requirements.txt` to install needed dependencies. 
 
 ## Quick Start Guide
 Follow the directions in `statyc_settings.py` to set up things like your base URL, and you're almost done. You can make a new `.md` file inside of `/in/posts` to create a new post. To make sure that statyc-py properly reads the post, you can follow these guidelines, or use one of the default posts as a reference.
