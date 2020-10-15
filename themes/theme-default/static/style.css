@@ -59,7 +59,6 @@ p {
     font-size: 25pt;
     font-weight: bold;
     text-align: left;
-    margin-left: 10pt;
     margin-top: 5pt;
 }
 
@@ -100,7 +99,6 @@ footer {
     margin-bottom: 10pt;
     margin-left: 20pt;
     margin-right: 20pt;
-    border-radius: 5pt;
 }
 
 .article{
@@ -339,9 +337,6 @@ button span {
         overflow-x: hidden;
         border-radius: 5pt;
     }
-    .titletext {
-        margin-left: 20pt;
-    }
 }
 
 /* CSS FOR MOBILE DEVICES */
@@ -363,9 +358,6 @@ button span {
         overflow: hidden;
         box-shadow: none;
         border-radius: 5pt;
-    }
-    .titletext {
-        margin-left: 7pt;
     }
     .scroller button {
         color: white;
