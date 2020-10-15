@@ -1,0 +1,351 @@
+* {
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+  
+#searchbox {
+    background-color: cornsilk;
+    color: black;
+    font-size: 13pt;
+    padding-left: 2pt;
+    padding-top: 8pt;
+    padding-bottom: 6pt;
+    margin-right: 5pt;
+    border-bottom: none;
+    transition: all .2s ease-in-out;
+    height: auto;
+    display: inline-block;
+    border: none;
+    border-bottom: 2pt solid rgba(48, 48, 48, 0);
+}
+#searchbox:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 2pt solid rgba(48, 48, 48, 1);
+}
+
+.search-found {
+    background-color: #FFFF00;
+}
+
+html {
+    height: 100%;
+    /*background-color: cornsilk;*/
+    background-color: cornsilk;
+    overflow-x: hidden;
+}
+
+.titletext, footer, h2, h4, input {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13pt !important;
+    line-height: 1.7 !important;
+}
+
+.titletext {
+    font-size: 25pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5pt;
+}
+
+.titletext span {
+    display: block;
+    font-size: 15pt;
+    font-weight: normal;
+}
+
+p, footer, h2, h4 {
+    color: black;
+    margin-left: 20pt;
+    margin-right: 20pt;
+}
+
+
+h1, h2, h3, h4 {
+    margin-bottom: -10pt;
+}
+
+body {
+    text-align: left;
+    font-size: 12pt;
+}
+
+footer {
+    width: 48%;
+}
+
+.content {
+    margin-left: 10pt;
+    margin-right: 10pt;
+}
+
+.codehilite {
+    display: block;
+    padding-left: 10pt;
+    margin-bottom: 10pt;
+    margin-left: 20pt;
+    margin-right: 20pt;
+}
+
+.article{
+    padding-bottom: 10pt;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+    width: 48%;
+    display: block;
+}
+
+.scroller {
+    z-index: 1;
+    position: fixed;
+    right: 10pt;
+    bottom: 10pt;
+    align-content: center;
+    transition: all 300ms cubic-bezier(.6,.44,0,1.39);
+}
+
+.scroller button {
+    opacity: .75;
+    width: 25pt;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 0pt;
+    transition: all .2s ease-in-out;
+    outline: none;
+    background-size: 100% 210%;
+    background-image: linear-gradient(to top, rgb(39, 39, 39) 50%, rgb(0, 0, 0) 50%);
+}
+
+.scroller:hover {
+    bottom: 15pt;
+}
+
+.scroller button:hover {
+    width: 35pt;
+    transition: all 0.2s ease-in-out;
+    font-size: 12pt;
+    opacity: 1;
+    background-position: 0 100%;
+}
+
+.scroller button .icon {
+    width: 70%;
+    transition: all 0.2s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    filter: invert(100%) sepia(7%) saturate(1088%) hue-rotate(187deg) brightness(119%) contrast(100%);
+}
+
+.menubar {
+    margin-top: 10pt;
+    height: auto;
+    width: 48%;
+    display: block;
+    justify-content: space-between;
+    padding-top: 7pt;
+    padding-bottom: 5pt;
+}
+.menubar a {
+    padding-top: 8pt;
+    padding-bottom: 6pt;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13pt;
+    color: black;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    border-bottom: 2pt solid transparent;
+}
+
+.menubar a:hover {
+    border-bottom: 2pt solid rgb(48, 48, 48);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.article button {
+    transition: opacity .1s ease-in-out;
+    /*background-color: rgb(85, 85, 85);*/
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+.article button:hover {
+    opacity: 0.75;
+}
+
+.articleContent {
+    position: relative;
+    max-height: 60pt;
+    min-height: 60pt;
+    padding: 10pt;
+    margin-bottom: 10pt;
+    overflow: hidden;
+    opacity: 0.7;
+    transition: max-height .75s ease-in-out;
+}
+
+.articleContent img {
+    transition: all .75s ease-in-out;
+}
+
+.articleContent[data-open=false] {
+    max-height: 60pt !important;
+}
+
+.articleContent[data-open=true] {
+    opacity: 1;
+}
+
+.articleContent[data-open=false] img {
+    /*display: none;*/
+    opacity: 0;
+    max-width: calc(50% - 10pt);
+    margin: 5pt 5pt 0pt 0pt;
+}
+
+.articleContent[data-open=true] img {
+    max-width: calc(50% - 10pt);
+    max-height: 50%;
+    margin: 5pt 5pt 0pt 0pt;
+}
+
+.articleContent:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(-90deg, rgb(255 255 255 / 0.001%), cornsilk);
+    background-image: -webkit-linear-gradient(-90deg, rgb(255 255 255 / 1%), cornsilk);
+}
+
+.articleContent[data-open="true"]:after {
+    display: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    height: auto;
+    margin-top: 10pt;
+    padding-bottom: 10pt;
+    display: block;
+    text-align: left;
+    color: black;
+    z-index: 1;
+}
+
+footer {
+    margin-bottom: 5pt;
+    margin-top: 10pt;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+footer p {
+    font-size: 10pt !important;
+    line-height: 100% !important;
+}
+
+button {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20pt;
+    border-style: solid;
+    border-width: 0px;
+    outline: none;
+    padding: 4pt;
+    display: inline;
+    font-size: 10pt;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+button span {
+    font-size: 8pt;
+}
+
+.readMoreButton {
+    margin-left: 2pt;
+    background-color: rgb(69, 69, 69) !important;
+}
+
+/* CSS FOR SMALL WINDOW SIZE */
+
+@media only screen and (max-width: 1400px) {
+    .content {
+        margin-left: 20pt;
+        margin-right: 20pt;
+    }
+    .codehilite {
+        margin-left: 20pt;
+        margin-right: 20pt;
+    }
+    header, .article, footer, .menubar {
+        width: 95%;
+        overflow-x: hidden;
+    }
+    .titletext {
+        margin-left: 20pt;
+    }
+}
+
+/* CSS FOR MOBILE DEVICES */
+
+@media (hover:none), (hover:on-demand) {
+    h1, h2, h3, h4, p, body, .codehilite {
+        margin-left: 7pt;
+        margin-right: 7pt;
+    }
+    img {
+        margin-right: 10pt;
+    }
+    button {
+        margin-left: 7pt;
+    }
+    header, .article, footer, .menubar {
+        margin-top: 10pt;
+        width: 95%;
+        overflow: hidden;
+        box-shadow: none;
+    }
+    .titletext {
+        margin-left: 7pt;
+    }
+    .scroller button {
+        color: white;
+        font-size: 14pt;
+    }
+    .article {
+        margin-bottom: 0pt;
+    }
+    .scroller button {
+        font-size: 0pt;
+    }
+    .scroller button:focus {
+        width: 35pt;
+        transition: all 0.2s ease-in-out;
+        font-size: 15pt;
+        opacity: 1;
+    }
+    .article button {
+        transition: unset;
+    }
+    .article button:hover {
+        opacity: unset;
+    }
+    
+}
