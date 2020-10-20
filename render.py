@@ -69,7 +69,6 @@ for filename in sortedFiles:
     #converts the body markdown to html
     contentHTML = markdown(str(postContent), extras=['fenced-code-blocks'])
 
-
     #formats the post template using info
     renderedPost = postTemplate.format(articleName = articleName, articleTitle = postName, articleAuthor = postAuthor, articleDate = postDate, articleContent = contentHTML)
 
