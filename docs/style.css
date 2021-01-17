@@ -3,36 +3,25 @@
     margin-right: auto;
     overflow-x: hidden;
 }
-
-
-.bg {
-    z-index: -10;
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    right: -50%;
-    bottom: -50%;
-    width: 200%;
-    height: 200vh;
-    background: rgb(40, 40, 40);
-}
   
 #searchbox {
-    background-color: rgb(60, 60, 60);
-    border: none;
-    color: white;
-    font-size: 12pt;
-    border-radius: 5pt;
-    padding: 2pt;
-    margin-bottom: 1pt;
+    background-color: cornsilk;
+    color: black;
+    font-size: 13pt;
+    padding-left: 2pt;
+    padding-top: 8pt;
+    padding-bottom: 6pt;
     margin-right: 5pt;
-    float: right;
+    border-bottom: none;
     transition: all .2s ease-in-out;
+    height: auto;
+    display: inline-block;
+    border: none;
+    border-bottom: 2pt solid rgba(48, 48, 48, 0);
 }
-
-
 #searchbox:hover {
-    background-color: rgb(50, 50, 50);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 2pt solid rgba(48, 48, 48, 1);
 }
 
 .search-found {
@@ -41,16 +30,17 @@
 
 html {
     height: 100%;
-    background-color: rgb(40, 40, 40);
+    /*background-color: cornsilk;*/
+    background-color: cornsilk;
     overflow-x: hidden;
 }
 
 .titletext, footer, h2, h4, input {
-    font-family: Arial, 'Century Gothic', 'Futura';
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
-    font-family: 'Source Sans Pro', 'Franklin Gothic Light', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13pt !important;
     line-height: 1.7 !important;
 }
@@ -58,7 +48,7 @@ p {
 .titletext {
     font-size: 25pt;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     margin-top: 5pt;
 }
 
@@ -69,7 +59,7 @@ p {
 }
 
 p, footer, h2, h4 {
-    color: rgb(40, 40, 40);
+    color: black;
     margin-left: 20pt;
     margin-right: 20pt;
 }
@@ -105,11 +95,8 @@ footer {
     padding-bottom: 10pt;
     margin-top: 20pt;
     margin-bottom: 20pt;
-    background-color: white;
-    box-shadow: 0px 5px 5px 0px rgb(14 14 14 / 0.5), 0px 0px 5px 0px rgb(14 14 14 / 0.5);
     width: 48%;
     display: block;
-    border-radius: 5pt;
 }
 
 .scroller {
@@ -125,13 +112,13 @@ footer {
     opacity: .75;
     width: 25pt;
     color: white;
-    font-family: 'Consolas', monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 0pt;
     transition: all .2s ease-in-out;
     outline: none;
     background-size: 100% 210%;
-    background-image: linear-gradient(to top, rgb(77, 188, 222, 1) 50%, rgb(255, 91, 91) 50%);
+    background-image: linear-gradient(to top, rgb(39, 39, 39) 50%, rgb(0, 0, 0) 50%);
 }
 
 .scroller:hover {
@@ -141,9 +128,7 @@ footer {
 .scroller button:hover {
     width: 35pt;
     transition: all 0.2s ease-in-out;
-    background-color: rgb(77 188 222);
     font-size: 12pt;
-    text-transform: uppercase;
     opacity: 1;
     background-position: 0 100%;
 }
@@ -154,51 +139,41 @@ footer {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    background-color: rgba(255, 255, 255, 0);
     filter: invert(100%) sepia(7%) saturate(1088%) hue-rotate(187deg) brightness(119%) contrast(100%);
 }
 
 .menubar {
     margin-top: 10pt;
-    border-radius: 5pt;
     height: auto;
     width: 48%;
     display: block;
     justify-content: space-between;
     padding-top: 7pt;
     padding-bottom: 5pt;
-    background-color: rgba(255, 255, 255, 0.15);
-    box-shadow: 0px 5px 5px 0px rgb(14 14 14 / 0.5), 0px 0px 5px 0px rgb(14 14 14 / 0.5);
 }
 .menubar a {
     padding-top: 8pt;
     padding-bottom: 6pt;
     padding-left: 5pt;
     padding-right: 5pt;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13pt;
-    color: white;
+    color: black;
     text-decoration: none;
     transition: all .2s ease-in-out;
     border-bottom: 2pt solid transparent;
 }
 
 .menubar a:hover {
-    border-radius: 5pt;
-    border-bottom: 2pt solid rgb(255, 91, 91);
-    color: rgb(255, 91, 91);
-    background-color: rgb(59, 59, 59);
-}
-
-.menubar a:hover {
-    border-radius: 5pt;
-    border-bottom: 2pt solid rgb(255, 91, 91);
-    color: rgb(255, 91, 91);
-    background-color: rgb(59, 59, 59);
+    border-bottom: 2pt solid rgb(48, 48, 48);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .article button {
     transition: opacity .1s ease-in-out;
+    /*background-color: rgb(85, 85, 85);*/
+    background-color: rgb(39, 39, 39);
+    color: white;
 }
 
 .article button:hover {
@@ -236,7 +211,6 @@ footer {
 }
 
 .articleContent[data-open=true] img {
-    border-radius: 5pt;
     max-width: calc(50% - 10pt);
     max-height: 50%;
     margin: 5pt 5pt 0pt 0pt;
@@ -249,8 +223,8 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(-90deg, rgb(255 255 255 / 0.001%), rgb(255 255 255));
-    background-image: -webkit-linear-gradient(-90deg, rgb(255 255 255 / 0.001%), rgb(255 255 255));
+    background-image: linear-gradient(-90deg, rgb(255 255 255 / 0.001%), cornsilk);
+    background-image: -webkit-linear-gradient(-90deg, rgb(255 255 255 / 1%), cornsilk);
 }
 
 .articleContent[data-open="true"]:after {
@@ -260,7 +234,6 @@ footer {
 img {
     display: block;
     width: 100%;
-    background-color: rgb(40, 40, 40);
 }
 
 header {
@@ -270,8 +243,7 @@ header {
     padding-bottom: 10pt;
     display: block;
     text-align: left;
-    background-color: rgb(255, 91, 91);
-    color: white;
+    color: black;
     z-index: 1;
 }
 
@@ -281,28 +253,19 @@ footer {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    background-color: rgb(77 188 222);
     text-align: center;
-    border-radius: 5pt;
 }
-
-footer p{
-    color: rgb(40, 40, 40);
-}
-
-footer, header {
-    color: white ;
-    box-shadow: 0px 5px 5px 0px rgb(14 14 14 / 0.5), 0px 0px 5px 0px rgb(14 14 14 / 0.5);
+footer p {
+    font-size: 10pt !important;
+    line-height: 100% !important;
 }
 
 button {
-    border-radius: 4pt;
     font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-left: 20pt;
     border-style: solid;
     border-width: 0px;
-    color: white;
-    background-color: rgb(255, 91, 91);
     outline: none;
     padding: 4pt;
     display: inline;
@@ -316,9 +279,8 @@ button span {
 }
 
 .readMoreButton {
-    color: white;
-    background-color: rgb(40, 40, 40);
     margin-left: 2pt;
+    background-color: rgb(69, 69, 69) !important;
 }
 
 /* CSS FOR SMALL WINDOW SIZE */
@@ -335,7 +297,9 @@ button span {
     header, .article, footer, .menubar {
         width: 95%;
         overflow-x: hidden;
-        border-radius: 5pt;
+    }
+    .titletext {
+        margin-left: 20pt;
     }
 }
 
@@ -357,7 +321,9 @@ button span {
         width: 95%;
         overflow: hidden;
         box-shadow: none;
-        border-radius: 5pt;
+    }
+    .titletext {
+        margin-left: 7pt;
     }
     .scroller button {
         color: white;
@@ -372,7 +338,6 @@ button span {
     .scroller button:focus {
         width: 35pt;
         transition: all 0.2s ease-in-out;
-        background-color: rgb(77 188 222);
         font-size: 15pt;
         opacity: 1;
     }
