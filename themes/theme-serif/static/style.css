@@ -3,9 +3,14 @@
     margin-right: auto;
     overflow-x: hidden;
 }
+
+iframe {
+    width: 100%;
+    border: hidden;
+}
   
 #searchbox {
-    background-color: cornsilk;
+    background-color: white;
     color: black;
     font-size: 13pt;
     padding-left: 2pt;
@@ -31,16 +36,16 @@
 html {
     height: 100%;
     /*background-color: cornsilk;*/
-    background-color: cornsilk;
+    background-color: white;
     overflow-x: hidden;
 }
 
 .titletext, footer, h2, h4, input {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 13pt !important;
     line-height: 1.7 !important;
 }
@@ -76,6 +81,7 @@ body {
 
 footer {
     width: 48%;
+    overflow: hidden;
 }
 
 .content {
@@ -112,7 +118,7 @@ footer {
     opacity: .75;
     width: 25pt;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     font-size: 0pt;
     transition: all .2s ease-in-out;
@@ -156,7 +162,7 @@ footer {
     padding-bottom: 6pt;
     padding-left: 5pt;
     padding-right: 5pt;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 13pt;
     color: black;
     text-decoration: none;
@@ -203,18 +209,28 @@ footer {
     opacity: 1;
 }
 
-.articleContent[data-open=false] img {
+.articleContent[data-open=false] img, iframe{
     /*display: none;*/
     opacity: 0;
-    max-width: calc(50% - 10pt);
+    max-width: calc(70% - 10pt);
     margin: 5pt 5pt 0pt 0pt;
 }
 
-.articleContent[data-open=true] img {
-    max-width: calc(50% - 10pt);
+.articleContent[data-open=true] img, iframe {
+    max-width: calc(70% - 10pt);
     max-height: 50%;
     margin: 5pt 5pt 0pt 0pt;
 }
+
+
+.articleContent[data-open=true] iframe{
+    opacity: 1;
+    max-width: 100%;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    max-height: 500pt;
+}
+
 
 .articleContent:after {
     content: " ";
@@ -223,8 +239,8 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(-90deg, rgb(255 255 255 / 0.001%), cornsilk);
-    background-image: -webkit-linear-gradient(-90deg, rgb(255 255 255 / 1%), cornsilk);
+    background-image: linear-gradient(-90deg, rgb(255 255 255 / 0.001%), white);
+    background-image: -webkit-linear-gradient(-90deg, rgb(255 255 255 / 1%), white);
 }
 
 .articleContent[data-open="true"]:after {
@@ -236,13 +252,14 @@ img {
     width: 100%;
 }
 
+
 header {
     position: relative;
     height: auto;
     margin-top: 10pt;
     padding-bottom: 10pt;
     display: block;
-    text-align: left;
+    text-align: center;
     color: black;
     z-index: 1;
 }
@@ -258,11 +275,12 @@ footer {
 footer p {
     font-size: 10pt !important;
     line-height: 100% !important;
+    overflow: hidden;
 }
 
 button {
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 20pt;
     border-style: solid;
     border-width: 0px;
