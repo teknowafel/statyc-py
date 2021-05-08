@@ -83,12 +83,17 @@ footer {
     margin-left: 10pt;
     margin-right: 10pt;
 }
-.codehilite {
+code {
+    color: white;
+    background-color: rgb(61, 61, 61);
+    box-shadow: 0px 0px 7px black;
+    border-radius: 5px;
     display: block;
-    padding-left: 10pt;
+    padding: 10pt;
     margin-bottom: 10pt;
     margin-left: 20pt;
     margin-right: 20pt;
+    margin-top: 10pt;
 }
 .article{
     padding-bottom: 10pt;
